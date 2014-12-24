@@ -28,6 +28,7 @@ How to use the calibrated output
 --------------------------------
 See example.  The important stuff:
 
+```
 //[setup] load calibration file (once)
 kinectProjectorOutput.load(saveFile);
 
@@ -39,7 +40,7 @@ for (int j = 0; j < contourFinder.blobs[i].nPts ; j++) {
 //Project points from depth XY coordinates to projector XY coordinates.
 //internally, depth XY location is transformed to world (x,y,z) then to projector XY.
 vector<ofPoint> projected = kinectProjectorOutput.projectFromDepthXYVector(points);
-			
+```	
 					
 Chessboard finding parameters
 ----------------------------- 
